@@ -5,15 +5,15 @@ class Solution(object):
         :rtype: int
         """
 
-        if len(nums) = 1:
+        if len(nums) == 1:
             return nums[0]
 
         left = 0
         right = len(nums) - 1
-        midpoint = lambda low, high : low + (high-low)//2
+        middlepoint = lambda low, high : low + (high-low)//2
 
         while right-left != 1:
-            middle = midpoint(left, right)
+            middle = middlepoint(left, right)
 
             if nums[middle] < nums[right]:
                 right = middle
